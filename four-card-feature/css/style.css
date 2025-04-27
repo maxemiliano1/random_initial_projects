@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    background-color: hsl(0, 0%, 98%);
+}
+
+/* conteudo */
+
+.header {
+    width: 300px;
+    margin: 30px auto 50px auto;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 2.4rem;
+}
+
+.titulo span {
+    font-weight: 200;
+}
+
+.texto-titulo {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.titulos {
+    color: hsl(234, 12%, 34%);
+}
+
+.texto-titulo,
+.texto-card {
+    color: hsl(229, 6%, 66%);
+}
+
+.container-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.card {
+    width: 300px;
+    height: 210px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.098);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.supervisor {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.builder {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.karma {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.conteudo-card {
+    width: 250px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.largura-texto-card h2 {
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+
+.texto-card {
+    font-weight: 200;
+    font-size: 1.3rem;
+    line-height: 23px;
+    margin-top: 10px;
+}
+
+.largura-texto-card {
+    width: 248px;
+}
+
+.imagem-card {
+    width: 60px;
+    align-self: flex-end;
+}
+
+/* fim conteudo */
+
+@media (min-width:975px) {
+
+    body {
+        transform: scale(0.96);
+    }
+
+    .header {
+        width: 500px;
+    }
+
+     .card {
+        margin: 0;
+    }
+
+    .card:hover {
+        transform: scale(1.1);
+    }
+
+    .container-card {
+        width: 970px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        padding: 0;
+        justify-items: center;
+    }
+
+    .supervisor {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    .builder {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .karma {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .calculator {
+        grid-column: 3/4;
+        grid-row: 1/3;
+    }
+
+
+}

@@ -1,0 +1,402 @@
+/* Configurações Inicias */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+:root {
+    /* Primary */
+    --pink: hsl(322, 100%, 66%);
+
+    /* Neutral */
+
+    --very-pale-cyan: hsl(193, 100%, 96%);
+    --very-dark-cyan: hsl(192, 100%, 9%);
+    --grayish-blue: hsl(208, 11%, 55%);
+    font-size: 62.5%;
+}
+
+/* Fim Configurações Inicias */
+
+/* Header */
+
+.header {
+    background: url('../img/bg-hero-desktop.svg') no-repeat var(--very-pale-cyan);
+    background-size: 100%;
+    width: 100%;
+    padding: 45px 0;
+    min-height: 100vh;
+}
+
+.largura-limitada {
+    max-width: 120.0rem;
+    margin: 0 auto;
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+}
+
+.container-img-logo {
+    max-width: 200px;
+}
+
+.img-logo {
+    width: 100%;
+}
+
+.link-logo {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--very-dark-cyan);
+    font-size: 1.6rem;
+    background-color: #fff;
+    padding: 10px 50px;
+    border-radius: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.171);
+    transition: 0.2s;
+}
+
+.link-logo:hover {
+    color: var(--grayish-blue)
+}
+
+.container-content-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.box-text-header {
+    padding-right: 55px;
+    width: 43%;
+}
+
+.titulos {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 3.0rem;
+    color: var(--very-dark-cyan);
+}
+
+.titulo-header {
+    font-size: 3.8rem;
+    margin-bottom: 30px;
+}
+
+.text-p-header {
+    font-size: 1.6rem;
+    color: var(--very-dark-cyan);
+    margin-bottom: 25px;
+}
+
+.btn {
+    font-family: 'Open Sans', sans-serif;
+    border-style: none;
+    background-color: var(--pink);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.171);
+    transition: 0.3s;
+}
+
+.btn-header {
+    padding: 18px 55px;
+    font-size: 1.5rem;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.container-img-header {
+    width: 57%;
+}
+
+.img-header {
+    width: 100%;
+}
+
+/* Fim Header */
+
+/* Main */
+
+.container-main {
+    margin-top: 160px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    padding: 50px 0 50px 100px;
+}
+
+.card-text {
+    max-width: 500px;
+}
+
+.sub-titulo-card {
+    margin-bottom: 20px;
+}
+
+.content-card {
+    color: var(--grayish-blue);
+}
+
+.container-img-card {
+    max-width: 400px;
+}
+
+.img-card {
+    width: 100%;
+}
+
+/* Fim Main */
+
+
+/* Footer */
+
+.container-footer {
+    margin-top: 110px;
+    width: 100%;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    padding: 60px 0 50px 0;
+    background-color: #fff;
+    z-index: 999;
+    position: relative;
+}
+
+.sub-footer {
+    font-size: 3.2rem;
+    margin-bottom: 50px;
+}
+
+.btn-footer {
+    font-size: 1.8rem;
+    padding: 25px 100px;
+    border-radius: 50px;
+}
+
+.container-footer-links {
+    background-color: var(--very-dark-cyan);
+    margin-top: -80px;
+    padding: 190px 0 65px 0;
+
+}
+
+.container-logo-img-footer {
+    max-width: 245px;
+    margin-bottom: 45px;
+}
+
+.logo-footer {
+    width: 100%;
+}
+
+.content-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-left-footer {
+    max-width: 370px;
+}
+
+.link-footer {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.container-left-footer .link-footer:first-child {
+    display: flex;
+    align-items: flex-start;
+}
+
+.container-left-footer .link-footer img {
+    margin-right: 15px;
+}
+
+.container-left-footer .link-footer {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.container-center-footer {
+    list-style: none;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.container-center-footer .link-footer {
+    margin-bottom: 20px;
+}
+
+.container-center-footer .link-footer:hover {
+    text-decoration: underline;
+    color: aqua;
+}
+
+.fa-brands {
+    font-size: 1.3rem;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 15px;
+    transition: 0.2s;
+}
+
+.fa-brands:hover {
+    color: aqua;
+    border: 2px solid aqua;
+}
+
+.copy {
+    font-size: 1.3rem;
+    color: #fff;
+    text-align: right;
+}
+
+/* Fim Footer */
+
+
+/* Responsivo */
+
+@media (max-width: 1200px) {
+    .largura-limitada {
+        padding: 0 20px;
+    }
+    .container-footer-padding-responsivo {
+        padding: 0 20px;        
+    }
+}
+
+@media (max-width: 768px) {
+
+    .largura-limitada {
+        padding: 0 20px;
+    }
+
+    .container-img-logo {
+        width: 120px;
+    }
+
+    .link-logo {
+        font-size: 1.3rem;
+        padding: 8px 20px;
+    }
+
+    .container-content-header {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .box-text-header {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .titulos {
+        font-size: 2.5rem;
+    }
+
+    .text-p-header {
+        font-size: 1.7rem;
+    }
+
+    .container-img-header {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .cards {
+        padding: 50px 30px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .container-img-card {
+        width: 100%;
+        order: -1;
+        margin-bottom: 30px;
+    }
+
+    .content-card {
+        font-size: 1.7rem;
+    }
+
+    .card-footer {
+        text-align: center;
+    }
+
+    .container-footer-padding-responsivo {
+        padding: 0 20px;        
+    }
+
+    .sub-footer {
+        font-size: 1.7rem;
+    }
+
+    .btn-footer {
+        padding: 15px 50px;
+        font-size: 1.5rem;
+    }
+
+    .content-footer {
+        flex-direction: column;       
+    }
+
+    .container-left-footer {
+        margin-bottom: 30px;
+    }
+
+    .icons-footer {
+        
+        margin: 30px auto;
+    }
+
+    .copy {
+        text-align: center;
+    }
+}
+
+
+/* Fim Responsivo */
